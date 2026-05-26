@@ -1,4 +1,4 @@
-import Link from "next/link";
+import {Link} from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { Mail, MessageCircle, Bug, Handshake } from "lucide-react";
 
@@ -10,9 +10,10 @@ const CONTRIBUTING_URL = "https://github.com/RatLoopz/sahidawa-india/blob/main/C
 
 export default function ContactPage() {
     const t = useTranslations("contact");
-
+   
     return (
         <main className="min-h-screen bg-white">
+           
             {/* Hero */}
             <section className="border-b border-gray-100 px-4 py-16 text-center">
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-green-200 bg-green-50 px-4 py-1.5 text-sm font-medium text-green-700">
@@ -123,7 +124,7 @@ export default function ContactPage() {
                             {t("quickLinks.about")}
                         </Link>
                         <Link
-                            href="/privacy"
+                            href="privacy"
                             className="rounded-full border border-gray-200 px-5 py-2 text-sm text-gray-600 transition-colors hover:border-green-400 hover:text-green-600"
                         >
                             {t("quickLinks.privacy")}
