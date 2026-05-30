@@ -34,14 +34,11 @@ export default function AboutPage() {
                     </div>
                      <h1 className="text-4xl leading-[1.1] font-black tracking-tight text-(--color-text-primary) md:text-6xl">
                         {t.rich('heroTitle',{
-                            highlight:(chunk)=>(
-                                <span className="text-emerald-600 dark:text-emerald-400">{chunk}</span>
+                            highlight:(chunks)=>(
+                                <span className="text-emerald-600 dark:text-emerald-400">{chunks}</span>
                             )
                         })}
                     </h1>
-                    {/* <h1 className="text-4xl leading-[1.1] font-black tracking-tight text-(--color-text-primary) md:text-6xl">
-                        {t("heroTitle.prefix")}{" "}<span className="text-emerald-600 dark:text-emerald-400">{t("heroTitle.highlight")}</span>
-                    </h1> */}
                     <p className="mx-auto max-w-2xl text-lg leading-relaxed font-medium text-(--color-text-secondary) md:text-xl">
                        {t("heroSubtitle")}
                     </p>
