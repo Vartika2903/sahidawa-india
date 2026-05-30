@@ -32,9 +32,16 @@ export default function AboutPage() {
                         </span>
                         {t("badge")}
                     </div>
-                    <h1 className="text-4xl leading-[1.1] font-black tracking-tight text-(--color-text-primary) md:text-6xl">
-                        {t("heroTitle.prefix")}{" "}<span className="text-emerald-600 dark:text-emerald-400">{t("heroTitle.highlight")}</span>
+                     <h1 className="text-4xl leading-[1.1] font-black tracking-tight text-(--color-text-primary) md:text-6xl">
+                        {t.rich('heroTitle',{
+                            highlight:(chunk)=>(
+                                <span className="text-emerald-600 dark:text-emerald-400">{chunk}</span>
+                            )
+                        })}
                     </h1>
+                    {/* <h1 className="text-4xl leading-[1.1] font-black tracking-tight text-(--color-text-primary) md:text-6xl">
+                        {t("heroTitle.prefix")}{" "}<span className="text-emerald-600 dark:text-emerald-400">{t("heroTitle.highlight")}</span>
+                    </h1> */}
                     <p className="mx-auto max-w-2xl text-lg leading-relaxed font-medium text-(--color-text-secondary) md:text-xl">
                        {t("heroSubtitle")}
                     </p>
@@ -109,13 +116,12 @@ export default function AboutPage() {
                                 {t("realIncident.title")}
                             </h4>
                             <p className="text-sm leading-relaxed font-medium text-(--color-text-secondary)">
-                                Delhi Police busted a counterfeit medicine ring supplying fake
-                                Johnson & Johnson and GSK medicines — made of chalk powder and
-                                starch — all the way into government hospitals. Patients had{" "}
+                               {t.rich('realIncident.text',{
+                                highlight:(chunks)=>(
                                 <span className="font-bold text-orange-600 dark:text-orange-400">
-                                    zero way to verify
-                                </span>{" "}
-                                these medicines before consuming them.
+                                    {chunks}
+                                </span>)
+                               })}
                             </p>
                             <p className="mt-2 text-sm font-bold text-emerald-600 dark:text-emerald-400">
                                 {t("realIncident.highlight")}

@@ -183,10 +183,7 @@
     },
     "about":{
         "badge": "GSSoC 2026 Open Source Project",
-        "heroTitle":{
-            "prefix":"About",
-            "highlight":"SahiDawa"
-        },
+        "heroTitle":"About <highlight>SahiDawa</highlight>",
         "heroSubtitle":"India's first open-source citizen medicine verifier & rural health bridge. Built for Bharat. Not just India.",
        "features":{
         "free":"100% Free. Forever.",
@@ -213,7 +210,7 @@
        },
        "realIncident":{
         "title":"Real Incident — July 2025",
-        "description":"Delhi Police busted a counterfeit medicine ring supplying fake Johnson & Johnson and GSK medicines — made of chalk powder and starch — all the way into government hospitals. Patients had zero way to verify these medicines before consuming them.",        
+        "text":"Delhi Police busted a counterfeit medicine ring supplying fake Johnson & Johnson and GSK medicines — made of chalk powder and starch — all the way into government hospitals. Patients had <highlight>zero way to verify</highlight> these medicines before consuming them.",        
         "highlight":"SahiDawa fixes this. For free. Forever. Open source."
        },
        "mission":{
