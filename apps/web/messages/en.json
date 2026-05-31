@@ -272,7 +272,8 @@
        "contactUs":{
         "title":"Get In Touch",
         "subtitle":"Have questions, ideas, or want to contribute? We'd love to hear from you."       
-       }        
+       } 
+    },       
     "Faq": {
         "badge": "GSSoC 2026 Open Source Project",
         "title": "Frequently Asked",
